@@ -10,9 +10,9 @@ public class Config {
 	// 봇 이름 및 파일 경로 기본값 변경
 
 	/// 봇 이름
-	public static final String BotName = "NoNameBot";
+	public static final String BotName = "HighRoller";
 	/// 봇 개발자 이름
-	public static final String BotAuthors = "NoName";
+	public static final String BotAuthors = "JSalon";
 	
 	
 	
