@@ -115,20 +115,44 @@ public class StrategyManager {
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
 
+
             // SupplyUsed가 8 일때 파일런 빌드
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
 
+            /*
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Forge);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Photon_Cannon);
+
+
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Photon_Cannon);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Photon_Cannon);
+            */
 
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Gateway);
+            //BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
+
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
+            /*
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
 
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Gateway);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
+            */
+
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
+
+
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Assimilator);
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Cybernetics_Core);
+            //BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
+
+            /*
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Dragoon);
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Dragoon);
+
+
 
 
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
@@ -171,6 +195,7 @@ public class StrategyManager {
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
+            */
         }
     }
 
@@ -219,6 +244,11 @@ public class StrategyManager {
                                 // std.cout + "worker enqueue" + std.endl;
                                 BuildManager.Instance().buildQueue.queueAsLowestPriority(
                                         new MetaType(InformationManager.Instance().getWorkerType()), false);
+                            }
+
+                            //.//
+                            if (BuildManager.Instance().buildQueue.getItemCount(UnitType.Protoss_Dragoon, null) == 0) {
+                                BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Dragoon);
                             }
                         }
                     }
