@@ -117,21 +117,20 @@ public class StrategyManager {
 
             // SupplyUsed가 8 일때 파일런 빌드
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getBasicSupplyProviderUnitType());
-
-
-
-
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
-            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Gateway);
+
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Forge);
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Photon_Cannon);
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Photon_Cannon);
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Photon_Cannon);
+
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Gateway);
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
+
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Gateway);
+            BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
+
+
             BuildManager.Instance().buildQueue.queueAsLowestPriority(InformationManager.Instance().getWorkerType());
             BuildManager.Instance().buildQueue.queueAsLowestPriority(UnitType.Protoss_Zealot);
 
